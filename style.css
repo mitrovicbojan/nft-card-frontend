@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600;700&display=swap");
+* {
+  font-family: "Outfit", sans-serif;
+  --blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue: hsl(217, 54%, 11%); /*main background*/
+  --very-dark-blue-card: hsl(216, 50%, 16%); /*card background*/
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+}
+.line {
+  border: 1px solid var(--very-dark-blue-line);
+  margin: 25px;
+}
