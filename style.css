@@ -35,12 +35,12 @@ h1 {
 }
 
 .container .card {
-  border: 2px solid white;
   max-width: 350px;
   padding: 20px;
   border-radius: 15px;
   height: 600px;
   background-color: var(--very-dark-blue-card);
+  box-shadow: -1px 12px 30px 18px rgba(0, 0, 0, 0.6);
 }
 
 .container .card .image img {
@@ -60,12 +60,19 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  float: left;
 }
 .profile img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
   border: 1px solid var(--white);
+}
+.user {
+  padding-left: 15px;
+}
+.title {
+  max-width: 205px;
 }
 .title:hover {
   color: var(--cyan);
@@ -74,6 +81,16 @@ h1 {
 .user-name:hover {
   color: var(--cyan);
   cursor: pointer;
+}
+.eth {
+  display: flex;
+  align-items: center;
+}
+.eth svg {
+  padding-right: 10px;
+}
+.eth p {
+  color: var(--cyan);
 }
 .timer {
   display: flex;
