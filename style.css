@@ -42,14 +42,47 @@ h1 {
   background-color: var(--very-dark-blue-card);
   box-shadow: -1px 12px 30px 18px rgba(0, 0, 0, 0.6);
 }
+.container .card .image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
 .container .card .image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 350px;
   height: auto;
   border-radius: 15px;
 }
+.container .card .image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: 250ms ease;
+  background-color: var(--cyan);
+  border-radius: 15px;
+}
+.container .card .image:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.icon {
+  fill: var(--white);
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 .line {
   border: 1px solid var(--very-dark-blue-line);
+  opacity: 0.5;
 }
 
 .numbers {
