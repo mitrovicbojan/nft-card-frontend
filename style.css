@@ -53,7 +53,25 @@ h1 {
   border-radius: 15px;
 }
 
-.container .card .image .after {
+.container .card .image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--cyan);
+  border-radius: 15px;
+}
+.container .card .image:hover::before {
+  opacity: 0.7;
+}
+
+/* .container .card .image .after {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,7 +92,7 @@ h1 {
   cursor: pointer;
   border-radius: 15px;
   opacity: 0.3;
-}
+} */
 
 .line {
   border: 1px solid var(--very-dark-blue-line);
